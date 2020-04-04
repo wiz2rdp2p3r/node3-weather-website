@@ -1,4 +1,4 @@
-console.log('Client side JS is loaded')
+//console.log('Client side JS is loaded')
 
 // client side javascript (from browser.. wont work in NodeJS)
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
