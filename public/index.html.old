@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="js/app.js"></script>
+        <title>Initial static file</title>
+    </head>
+    <body>
+        <h1>These videos are helpful but longggg.....</h1>
+    </body>
+</html>
