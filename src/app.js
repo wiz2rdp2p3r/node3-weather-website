@@ -11,6 +11,11 @@ const forecastPkg = require('./utils/forecast')
 // expressjs.com
 const app = express()
 
+// port configured as environment variable in heroku
+// default to 3000 if not running on heroku
+const port = process.env.PORT || 3000
+
+
 // config for handlebars
 // define templating engine
 app.set('view engine','hbs')
@@ -137,6 +142,6 @@ app.get('*', (req, res) => {
 })
 
 // start up server and listen on port
-app.listen(3000, () => {
-    console.log("web server started on port 3000....")
+app.listen(port, () => {
+    console.log('web server started on port ' +  port + '....')
 })
