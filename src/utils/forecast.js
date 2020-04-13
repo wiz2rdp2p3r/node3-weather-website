@@ -4,6 +4,9 @@
 //  - currently conditions
 //  - daily summary
 //
+// Example URL:
+//   https://api.darksky.net/forecast/363b6427c6097f21ed6ac78389b8e728/37.8267,-122.4233
+//
 const requestPkg = require('request')
 
 // Get forecast for lat/lon location
@@ -31,7 +34,9 @@ const forecast = ({longitude, latitude}, callback) => {
         } else {
             callback(undefined, {
                 currently: respBody.currently,
-                daily: respBody.daily.data[0].summary
+                daily: respBody.daily.data[0].summary,
+                dailyHigh: respBody.daily.data[0].temperatureHigh,
+                dailyLow: respBody.daily.data[0].temperatureLow
             })
         }
     })

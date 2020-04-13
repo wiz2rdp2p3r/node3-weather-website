@@ -40,8 +40,10 @@ weatherForm.addEventListener('submit', (e) => {
             //console.log(data[0].location)
             //console.log(data[0].forecast)
             messageOne.textContent = ''
-            messageTwo.textContent = data[0].location + ', ' + data[0].forecast
+            messageTwo.textContent = data[0].location + ', ' + data[0].forecast + 
+            '\nDaily high: ' + data[0].highTemp +
+            '\nDaily low: ' + data[0].lowTemp
         }
     })
-})
+  })
 })
